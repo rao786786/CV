@@ -1,0 +1,23 @@
+body {
+    background-color: #d1f7f7;
+    color: #272829;
+        }
+     
+hr   {
+              border-style: none;
+              border-top-style: dotted;
+              border-color: #8ad6dc;
+              border-width: 5px;
+              width: 40%;
+        }
+h1  {
+    color: #52a9a9;
+        }
+h3  {
+    color: #52a9a9;
+        }
+p   {
+    font-style: oblique;
+    text-align-last: center;
+    
+        }
