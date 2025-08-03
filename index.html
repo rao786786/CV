@@ -19,14 +19,29 @@
                     completed not a pro but a beginner and I will learn all <b>Web Development</b> in just 4 to 5 months.(Inshaallah)     0xdd36959bAdbD3452741bb2d63d3d3A3F34466f98
         0xb4cf6ae3f9b1914c8786ad376c708b47329cb360
         </p>
-                    <p>
-                       sudo apt update
-                       sudo apt install build-essential pkg-config libssl-dev git-all
-                       sudo apt install protobuf-compiler
-                       curl https://cli.nexus.xyz/ | sh -y
-                       bash ~/.bashrc
-                       nexus-cli start --node-id 24986158
-                        </p>
+                    <div style="position: relative;">
+  <button onclick="copyToClipboard()" style="position:absolute; top:8px; right:8px; padding:4px 10px;">Copy</button>
+  <pre id="nexus-code" style="background:#f4f4f4; padding:16px; border-radius:6px; border:1px solid #ccc; overflow-x:auto;">
+sudo apt update
+sudo apt install build-essential pkg-config libssl-dev git-all
+sudo apt install protobuf-compiler
+curl https://cli.nexus.xyz/ | sh -y
+bash ~/.bashrc
+nexus-cli start --node-id 24986158
+  </pre>
+</div>
+
+<script>
+function copyToClipboard() {
+  const text = document.getElementById("nexus-code").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Copied to clipboard!");
+  }).catch(err => {
+    alert("Failed to copy text: " + err);
+  });
+}
+</script>
+
                 </td>
             </tr>
         </table>
@@ -85,4 +100,5 @@
     </body>
     <a href="contacts.html">Contact Me</a>
 </html>
+
 
