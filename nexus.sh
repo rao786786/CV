@@ -7,7 +7,7 @@ sudo apt install -y build-essential pkg-config libssl-dev git-all protobuf-compi
 # Install Nexus CLI
 curl https://cli.nexus.xyz/ | sh
 
-source "$HOME/.bashrc"
+source /root/.bashrc
 # Prompt user for Node ID
 read -p "Enter your Node ID: " NODE_ID
 
