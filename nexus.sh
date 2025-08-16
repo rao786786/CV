@@ -5,8 +5,11 @@ sudo apt update
 sudo apt install -y build-essential pkg-config libssl-dev git-all protobuf-compiler
 
 # Install Nexus CLI
-curl https://cli.nexus.xyz/ | sh -y
+curl https://cli.nexus.xyz/ | sh
 
-source /home/mashrafpnp/.bashrc
-nexus-cli start --node-id 25663319
+source "$HOME/.bashrc"
+# Prompt user for Node ID
+read -p "Enter your Node ID: " NODE_ID
 
+# Start the Nexus CLI node
+nexus-cli start --node-id "$NODE_ID"
